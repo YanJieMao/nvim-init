@@ -47,7 +47,13 @@ require("lazy").setup({
 		lazy = true
 	
 	},
+	{
+		cmd = "Telescope",
+    		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+-- or                              , branch = '0.1.1',
+      		dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 })
-
+--theme
 vim.cmd.colorscheme("dracula")
 
