@@ -168,7 +168,7 @@ require("lazy").setup({
 	},
 })
 --theme
-vim.cmd.colorscheme("dracula")
+vim.cmd.colorscheme("base16-dracula")
 --lsp
 local lspconfig = require("lspconfig")
 require("mason").setup()
