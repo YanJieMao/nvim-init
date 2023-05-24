@@ -50,5 +50,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end, opts)
 	end,
 })
+-- terminal
 
-vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>ToggleTerm<CR>", { noremap = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>t",
+	" <cmd> exe v:count1 . 'ToggleTerm size=10 direction=horizontal'<cr>",
+	{ noremap = true }
+)
