@@ -1,4 +1,3 @@
-
 local set = vim.o
 set.number = true
 set.relativenumber = true
@@ -14,10 +13,6 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 	end,
 })
 
-
-
-local opt = { noremap = true, silent = true }
-
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.key")
 require("config.lazy")
@@ -26,4 +21,3 @@ require("plugins.colortheme")
 
 --theme
 vim.cmd.colorscheme("base16-dracula")
-
